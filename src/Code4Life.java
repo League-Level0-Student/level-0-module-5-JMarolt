@@ -11,6 +11,8 @@ import javax.swing.JOptionPane;
 
 
 public class Code4Life {
+	
+	public static void main(String[] args) {
 	/*
      * Ask the user how many hours they spent coding this week.
      * 
@@ -25,19 +27,23 @@ public class Code4Life {
 
 	int i = Integer.parseInt(ask);
 	
-			
+			if(i < 2) {
+				JOptionPane.showMessageDialog(null, "Stop watching youtube and write code!");
+			}
 	
-
-    private static void playBatmanTheme() {
+if(i > 1 && i < 5) {
+	
+}
+//    private static void playBatmanTheme() {
     	try {
    		 Clip clip = AudioSystem.getClip();
    		 clip.open(AudioSystem.getAudioInputStream(Code4Life.class.getResource("batman.wav")));
    		 clip.start();
    		 Thread.sleep(60002);
-   	} catch (Exception ex) {
+    	}catch (Exception ex) {
      	ex.printStackTrace();
    	}
     }
 
-
 }
+//}

@@ -30,6 +30,10 @@ System.out.println(name.substring(name.length()));
 			// 5. Use MODULO to set this variable to upper case for EVEN characters
 			//    and lower case for ODD characters.
 
+	if(a.chartAt()%2 == 0) {
+		
+	}
+
 			
 			// 6. ADD this String  (containing 1 char) to the goofyName String
 

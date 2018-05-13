@@ -1,7 +1,10 @@
 /*
+
  *    Copyright (c) The League of Amazing Programmers 2013-2017
  *    Level 0
  */
+
+import java.util.function.BiFunction;
 
 import javax.swing.JOptionPane;
 
@@ -16,15 +19,20 @@ public class GuessingPi {
 		//    The first value is "pi.charAt(0)", the second is "pi.charAt(1)", etc.
 		//    Run your program to see how this works.
 	System.out.println(pi.substring(0,4));
+	for(int i = 0 ; i < 85; i++) {
+		String a =	JOptionPane.showInputDialog("Guess the next digit in pi");
+		if((pi.charAt(i)+"").equals(a)) {
+			JOptionPane.showMessageDialog(null, "Correct!");
+		}
+		else {
+			JOptionPane.showMessageDialog(null, "Incorrect!");
+		JOptionPane.showConfirmDialog(null, "Start Over");
+		break;
+		}
+	JOptionPane.showMessageDialog(null, pi.charAt(i));
+	}
 		// 9. If you want to give the user more than one chance to guess,
 		//    put a for loop around steps 4-8.
-for(int i = 0 ; i < 85; i++) {
-String a =	JOptionPane.showInputDialog("Guess the next digit in pi");
-	if(a == a) {
-		JOptionPane.showMessageDialog(null, "Correct!");
-	}
-JOptionPane.showMessageDialog(null, pi.charAt(i));
-}
 			// 4. Create a for loop that will step through each digit of pi (steps 5-8)
 			//    NOTE: The number of digits in your string will be
 			//       yourStringVariable.length()
