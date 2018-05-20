@@ -27,12 +27,15 @@ public class Code4Life {
 
 	int i = Integer.parseInt(ask);
 	
-			if(i < 2) {
+			if(i < 3) {
 				JOptionPane.showMessageDialog(null, "Stop watching youtube and write code!");
 			}
 	
-if(i > 1 && i < 5) {
-	
+if(i > 2 && i < 5) {
+	JOptionPane.showMessageDialog(null, "You're a code ninja");
+}
+if(i > 4) {
+	JOptionPane.showMessageDialog(null, "Batman Theme Song");
 }
 //    private static void playBatmanTheme() {
     	try {

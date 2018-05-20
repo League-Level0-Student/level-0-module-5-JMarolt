@@ -36,6 +36,9 @@ public class GuessingPi {
 			// 4. Create a for loop that will step through each digit of pi (steps 5-8)
 			//    NOTE: The number of digits in your string will be
 			//       yourStringVariable.length()
+	for(int e = 0; e < 4; e++) {
+		System.out.println(e);
+	}
 
 				// 5. Ask the user for the NEXT digit of pi.
 
