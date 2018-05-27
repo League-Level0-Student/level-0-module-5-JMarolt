@@ -7,6 +7,7 @@ import javax.swing.JOptionPane;
 
 public class GoofyNames {
 	public static void main(String[] args) {
+		String n = "Jackson";
 		String goofyName = "";
 
 		// 1. Ask the user to enter their name
@@ -23,19 +24,26 @@ for(int i = 0; i < name.length(); i++) {
 			// 4. Create a String variable to store the next character of the name
 			//    using .substring(start, end)
 			//    HINT: replace 'start' and 'end' to get String with character at i 
-		String a = name;    
 	
-		System.out.println(a.charAt(1));
+		System.out.println(name.charAt(1));
 System.out.println(name.substring(name.length()));
 			// 5. Use MODULO to set this variable to upper case for EVEN characters
 			//    and lower case for ODD characters.
-int name2 = Integer.parseInt(name);
-if(a.charAt(name2)%2 == 0) {
-	JOptionPane.showMessageDialog(null, name2);
+for(int i = 0; i < name.length(); i++) {
+if(i%2 == 0) {
+String letter = n.charAt(i) + "";
+goofyName += letter.toUpperCase();
 }
-if(a.charAt(name2)%2 == 1) {
-JOptionPane.showMessageDialog(null, name2);
+if(i%2 == 1) {
+String letter2 = n.charAt(i) + "";
+goofyName += letter2.toLowerCase();
+
 }
+JOptionPane.showMessageDialog(null, goofyName);	
+
+//if(name.charAt(name2 - 1)%2 == 0) {
+//JOptionPane.showMessageDialog(null, name2);
+//}
 
 			// 6. ADD this String  (containing 1 char) to the goofyName String
 
@@ -44,4 +52,4 @@ JOptionPane.showMessageDialog(null, name2);
 
 	}
 }
-
+}
